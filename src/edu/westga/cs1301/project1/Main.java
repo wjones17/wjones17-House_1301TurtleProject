@@ -18,8 +18,7 @@ public class Main {
 	 * @precondition none
 	 * @postcondition the GUI has been initialized
 	 * 
-	 * @param args
-	 *            not used
+	 * @param args not used
 	 */
 	public static void main(String[] args) {
 		Gui theGui = new Gui();
