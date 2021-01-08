@@ -58,5 +58,6 @@ public class Gui extends GraphicsProgram {
 		this.sketchPad.draw();
 		this.statsController.displaySummaryStats();
 	}
-
+	
+	
 }

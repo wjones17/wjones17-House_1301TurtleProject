@@ -10,7 +10,7 @@ import edu.westga.cs1301.project1.utils.Statistics;
  * @version Spring 2020
  */
 public class StatisticsController {
-
+	
 	private Turtle turtle1;
 	private Turtle turtle2;
 
@@ -24,7 +24,7 @@ public class StatisticsController {
 		this.turtle1 = null;
 		this.turtle2 = null;
 	}
-
+	
 	/**
 	 * Creates a statistics controller that will use the two specified turtles.
 	 * 
@@ -35,7 +35,7 @@ public class StatisticsController {
 		this.turtle1 = turtle1;
 		this.turtle2 = turtle2;
 	}
-
+	
 	/**
 	 * Displays summary stats about the turtles used to draw.
 	 * 
@@ -45,7 +45,7 @@ public class StatisticsController {
 	public void displaySummaryStats() {
 		averageStats();
 		standardStats();
-
+		
 	}
 
 	private void standardStats() {
@@ -55,7 +55,7 @@ public class StatisticsController {
 		double turtle2size = turtle2.getTurtleSize();
 		double turtle1standard = (stepsByTurtle1 * turtle1size) / 50;
 		double turtle2standard = (stepsByTurtle2 * turtle2size) / 50;
-
+		
 		System.out.println("Standard turtle steps traveled by:");
 		System.out.println("First turtle:" + turtle1standard);
 		System.out.println("Second turtle:" + turtle2standard);
@@ -71,12 +71,13 @@ public class StatisticsController {
 
 		System.out.println("First turtle: " + stepsByTurtle1);
 		System.out.println("Second turtle: " + stepsByTurtle2);
-
+		
 		Statistics stats = new Statistics();
 		double average = stats.computeAverage(stepsByTurtle1, stepsByTurtle2);
 		System.out.println("Average steps taken by both turtles:" + average);
 		System.out.println();
-
+		
+		
 	}
 
 }

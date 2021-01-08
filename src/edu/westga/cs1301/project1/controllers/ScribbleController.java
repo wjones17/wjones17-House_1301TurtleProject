@@ -21,14 +21,16 @@ public class ScribbleController {
 	 * @precondition bigTurtle != null AND littleTurtle != null
 	 * @postcondition none
 	 * 
-	 * @param bigTurtle    The bigger of the two turtles .
-	 * @param littleTurtle The smaller of the two turtles.
+	 * @param bigTurtle
+	 *            The bigger of the two turtles .
+	 * @param littleTurtle
+	 *            The smaller of the two turtles.
 	 * 
 	 */
 	public ScribbleController(Turtle bigTurtle, Turtle littleTurtle) {
 		this.bigTurtle = bigTurtle;
 		this.littleTurtle = littleTurtle;
-
+		
 	}
 
 	/**
@@ -49,9 +51,9 @@ public class ScribbleController {
 
 		this.bigTurtle.drawRectangle(5, 7);
 		this.littleTurtle.drawRectangle(7, 15);
-
+		
 	}
-
+	
 	/**
 	 * Draws a house using both turtles
 	 * 
@@ -73,55 +75,55 @@ public class ScribbleController {
 		redSquare(2);
 		yellowHexagon(3);
 		turtleHomeLocation();
-
+	
 	}
-
 	private void blueSquare(int side) {
 		this.littleTurtle.setColor(Color.BLUE);
 		this.littleTurtle.setLocation(200, 680);
-		this.littleTurtle.drawRectangle(side, side);
+		this.littleTurtle.drawRectangle(side,side);	
 	}
-
+	
 	private void greenTriangle(int side) {
 		this.littleTurtle.setColor(Color.GREEN);
 		this.littleTurtle.setLocation(280, 720);
 		this.littleTurtle.drawTriangle(side);
 	}
-
+	
 	private void orangeHexagon(int side) {
 		this.littleTurtle.setColor(Color.ORANGE);
 		this.littleTurtle.setLocation(360, 720);
 		this.littleTurtle.drawHexagon(side);
 	}
-
+	
 	private void purpleTriangle(int side) {
 		this.littleTurtle.setColor(new Color(202, 65, 207));
 		this.littleTurtle.setLocation(420, 720);
 		this.littleTurtle.drawTriangle(side);
 	}
-
+	
 	private void redSquare(int side) {
 		this.littleTurtle.setColor(Color.RED);
 		this.littleTurtle.setLocation(500, 680);
 		this.littleTurtle.drawRectangle(side, side);
 	}
-
+	
 	private void yellowHexagon(int side) {
 		this.littleTurtle.setColor(Color.YELLOW);
 		this.littleTurtle.setLocation(660, 180);
 		this.littleTurtle.drawHexagon(side);
 	}
 
+
 	private void turtleHomeLocation() {
 		this.littleTurtle.setLocation(25, 25);
 		this.bigTurtle.setLocation(25, 25);
-
+		
 	}
 
 	private void drawDoor() {
 		this.littleTurtle.setLocation(360, 560);
 		this.littleTurtle.drawRectangle(2, 4);
-
+		
 	}
 
 	private void secondWindow() {
@@ -132,36 +134,36 @@ public class ScribbleController {
 		this.littleTurtle.lowerTail();
 		this.littleTurtle.stepForward(2);
 		this.littleTurtle.raiseTail();
-		this.littleTurtle.setLocation(480, 480);
+		this.littleTurtle.setLocation(480,480);
 		this.littleTurtle.turnLeft(90);
 		this.littleTurtle.lowerTail();
 		this.littleTurtle.stepForward(2);
 		this.littleTurtle.raiseTail();
-
+		
 	}
 
 	private void firstWindow() {
 		this.littleTurtle.setLocation(240, 460);
-		this.littleTurtle.drawRectangle(2, 2);
+		this.littleTurtle.drawRectangle(2,2);
 		this.littleTurtle.setLocation(260, 460);
 		this.littleTurtle.turnRight(90);
 		this.littleTurtle.lowerTail();
 		this.littleTurtle.stepForward(2);
 		this.littleTurtle.raiseTail();
-		this.littleTurtle.setLocation(240, 480);
+		this.littleTurtle.setLocation(240,480);
 		this.littleTurtle.turnLeft(90);
 		this.littleTurtle.lowerTail();
 		this.littleTurtle.stepForward(2);
 		this.littleTurtle.raiseTail();
-
+		
 	}
 
 	private void drawRoof() {
 		this.bigTurtle.setLocation(200, 400);
 		this.bigTurtle.drawTriangle(6);
-		this.bigTurtle.setLocation(560, 460);
+		this.bigTurtle.setLocation(560,460);
 		this.bigTurtle.drawTriangle(4);
-
+		
 	}
 
 	private void drawFrame() {
@@ -169,7 +171,7 @@ public class ScribbleController {
 		this.bigTurtle.drawRectangle(6, 4);
 		this.bigTurtle.setLocation(560, 460);
 		this.bigTurtle.drawRectangle(4, 3);
-
+		
 	}
 
 }
